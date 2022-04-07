@@ -42,7 +42,7 @@ async function base64Convertor(fileOrDir) {
       if (err) {
         throw err;
       }
-      console.log(chalk.green.bold(`The images is successfully saved in ${__dirname}/base64.json`));
+      console.log(chalk.green.bold(`The images is successfully saved in base64.json(current directory)`));
     });
   }
 }
