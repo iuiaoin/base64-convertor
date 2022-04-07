@@ -26,6 +26,9 @@
   ],
   "author": "iuiaoin",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "chalk": "4.1.2",
+    "image-to-base64": "2.2.0"
+  },
   "devDependencies": {}
 }
