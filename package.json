@@ -31,5 +31,7 @@
     "chalk": "4.1.2",
     "image-to-base64": "2.2.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "yargs": "^17.4.0"
+  }
 }
