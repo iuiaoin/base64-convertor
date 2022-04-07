@@ -2,7 +2,7 @@
   "name": "base64-encoder",
   "version": "1.0.0",
   "description": "Convert images to base64.",
-  "main": "base64-encoder.js",
+  "main": "index.js",
   "scripts": {},
   "repository": {
     "type": "git",
