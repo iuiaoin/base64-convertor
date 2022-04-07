@@ -1,4 +1,4 @@
 const process = require("process");
-const encode = require("./base64-encoder");
+const base64Convertor = require("./base64-convertor");
 
-encode(process.argv[2]);
+base64Convertor(process.argv[2]);

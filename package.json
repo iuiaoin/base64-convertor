@@ -1,12 +1,12 @@
 {
-  "name": "base64-encoder",
+  "name": "base64-convertor",
   "version": "1.0.0",
   "description": "Convert images to base64.",
   "main": "index.js",
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iuiaoin/base64-encoder.git"
+    "url": "git+https://github.com/iuiaoin/base64-convertor.git"
   },
   "keywords": [
     "node",

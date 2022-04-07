@@ -4,7 +4,7 @@ const fs = require("fs");
 const path = require("path");
 const { validImage } = require("./util");
 
-async function encode(fileOrDir) {
+async function base64Convertor(fileOrDir) {
   if(!fileOrDir) {
     throw new Error(chalk.red.bold("Please give a file path or directory of images"));
   }
@@ -47,4 +47,4 @@ async function encode(fileOrDir) {
   }
 }
 
-module.exports = encode;
+module.exports = base64Convertor;
