@@ -5,6 +5,9 @@ const path = require("path");
 const { validImage } = require("./util");
 
 async function encode(fileOrDir) {
+  if(!fileOrDir) {
+    throw new Error(chalk.red.bold("Please give a file path or directory of images"));
+  }
   const stat = fs.lstatSync(fileOrDir);
   if (stat.isFile()) {
     const filename = path.basename(fileOrDir);
@@ -12,17 +15,16 @@ async function encode(fileOrDir) {
       await imageToBase64(fileOrDir)
         .then((res) => {
           console.log(res);
-          console.log(chalk.green("The image is successfully converted to base64"));
+          console.log(chalk.green.bold("The image is successfully converted to base64"));
         })
         .catch((err) => {
-          console.log(chalk.red(err));
+          console.log(chalk.red.bold(err));
         });
     }
   }
 
   if (stat.isDirectory()) {
     const files = fs.readdirSync(fileOrDir);
-    console.log(files);
     const dataObj = {};
     for (f of files) {
       if (validImage(f)) {
@@ -31,7 +33,7 @@ async function encode(fileOrDir) {
             dataObj[f] = res;
           })
           .catch((err) => {
-            console.log(chalk.red(err));
+            console.log(chalk.red.bold(err));
           });
       }
     }
@@ -40,7 +42,7 @@ async function encode(fileOrDir) {
       if (err) {
         throw err;
       }
-      console.log(chalk.green(`The images is successfully saved in ${__dirname}/base64.json`));
+      console.log(chalk.green.bold(`The images is successfully saved in ${__dirname}/base64.json`));
     });
   }
 }
