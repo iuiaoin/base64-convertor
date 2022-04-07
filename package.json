@@ -1,0 +1,31 @@
+{
+  "name": "base64-encoder",
+  "version": "1.0.0",
+  "description": "Convert images to base64.",
+  "main": "base64-encoder.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iuiaoin/base64-encoder.git"
+  },
+  "keywords": [
+    "node",
+    "nodejs",
+    "module convert base64 nodejs",
+    "image2base64",
+    "image-to-base64",
+    "convert-image-base64",
+    "convert",
+    "save",
+    "code",
+    "base64",
+    "image",
+    "img",
+    "src",
+    "img src"
+  ],
+  "author": "iuiaoin",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {}
+}
