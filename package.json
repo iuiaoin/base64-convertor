@@ -4,7 +4,7 @@
   "description": "Convert images to base64.",
   "main": "index.js",
   "scripts": {
-    "build": "esbuild index.js --bundle --minify --platform=node --external:./node_modules/* --outfile=dist/base64-convertor.min.js"
+    "build": "uglifyjs index.js -c -m -o base64-convertor.min.js"
   },
   "repository": {
     "type": "git",
@@ -33,10 +33,10 @@
   "license": "MIT",
   "dependencies": {
     "chalk": "4.1.2",
-    "image-to-base64": "2.2.0"
+    "image-to-base64": "2.2.0",
+    "yargs": "17.4.1"
   },
   "devDependencies": {
-    "esbuild": "^0.14.34",
-    "yargs": "^17.4.0"
+    "uglify-js": "3.15.4"
   }
 }
