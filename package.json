@@ -2,7 +2,7 @@
   "name": "base64-convertor",
   "version": "1.3.1",
   "description": "Convert images to base64.",
-  "main": "dist/base64-convertor.min.js",
+  "main": "index.js",
   "scripts": {
     "build": "esbuild index.js --bundle --minify --platform=node --external:./node_modules/* --outfile=dist/base64-convertor.min.js"
   },
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/iuiaoin/base64-convertor.git"
   },
-  "bin": "dist/base64-convertor.min.js",
+  "bin": "index.js",
   "keywords": [
     "node",
     "nodejs",
